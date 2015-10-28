@@ -1,14 +1,24 @@
-﻿product(상품 정보)
-	name(품명) varchar(20)
-	code(코드) int unsigned primary
-	price(가격) int unsigned
+﻿(unsigned)
+	tiny  : 0 to 255
+	small : 0 to 65535
 
+product(상품 정보)
+	name(품명) varchar(20)
+	code(코드) tinyint unsigned primary
+	price(가격) smallint unsigned
+	expiration(유통기한) smallint unsigned
+
+
+
+currency(권액 정보)
+	code(코드) tinyint unsigned primary
+	currency(권액) smallint unsigned
 
 
 
 stock_001(001자판기 재고)
-	p_code(코드) int unsigned foreign key(product.code)
-	stock(재고량) int unsigned
+	p_code(코드) tinyint unsigned foreign key(product.code)
+	stock(재고량) tinyint unsigned
 	mf_date(제조일자) date
 	ep_date(유통기한) date
 
@@ -16,8 +26,8 @@ stock_001(001자판기 재고)
 
 
 stock_002(002자판기 재고)
-	p_code(코드) int unsigned foreign key(product.code)
-	stock(재고량) int unsigned
+	p_code(코드) tinyint unsigned foreign key(product.code)
+	stock(재고량) tinyint unsigned
 	mf_date(제조일자) date
 	ep_date(유통기한) date
 
@@ -25,12 +35,12 @@ stock_002(002자판기 재고)
 
 
 sales(판매량)
-	p_code(코드) int unsigned foreign key(product.code)
+	p_code(코드) tinyint unsigned foreign key(product.code)
 	sold(판매일) date
 
 
 
 
 bill(권액별 재고)
-	currency(권액 종류) int unsigned
-	stock(매수) int unsigned
+	c_code(권액 코드) tinyint unsigned
+	stock(매수) tinyint unsigned

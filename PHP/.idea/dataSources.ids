@@ -8,31 +8,44 @@
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <schema name="" catalog="vending_machine"/>
     <table name="bill" schema="" catalog="vending_machine" type="TABLE">
-      <column name="currency" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="stock" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <primary-key name="PRIMARY" columns="currency"/>
+      <column name="c_code" sqlType="TINYINT UNSIGNED" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <column name="stock" sqlType="TINYINT UNSIGNED" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="c_code"/>
+      <foreign-key name="bill_ibfk_1" columns="c_code" ref-table="currency" ref-schema="" ref-catalog="vending_machine" ref-columns="code" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="currency" schema="" catalog="vending_machine" type="TABLE">
+      <column name="code" sqlType="TINYINT UNSIGNED" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <column name="currency" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5"/>
+      <primary-key name="PRIMARY" columns="code"/>
+      <exported-key name="bill_ibfk_1" table="bill" schema="" catalog="vending_machine" columns="c_code"/>
     </table>
     <table name="product" schema="" catalog="vending_machine" type="TABLE">
       <column name="name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="price" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="expiration" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="code" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="price" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5"/>
+      <column name="expiration" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5"/>
+      <column name="code" sqlType="TINYINT UNSIGNED" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
       <primary-key name="PRIMARY" columns="code"/>
       <exported-key name="sales_ibfk_1" table="sales" schema="" catalog="vending_machine" columns="p_code"/>
       <exported-key name="stock_001_ibfk_1" table="stock_001" schema="" catalog="vending_machine" columns="p_code"/>
     </table>
     <table name="sales" schema="" catalog="vending_machine" type="TABLE">
-      <column name="p_code" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="p_code" sqlType="TINYINT UNSIGNED" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
       <column name="sold" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
       <primary-key name="PRIMARY" columns="p_code"/>
       <foreign-key name="sales_ibfk_1" columns="p_code" ref-table="product" ref-schema="" ref-catalog="vending_machine" ref-columns="code" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="stock_001" schema="" catalog="vending_machine" type="TABLE">
-      <column name="p_code" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="stock" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="p_code" sqlType="TINYINT UNSIGNED" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <column name="stock" sqlType="TINYINT UNSIGNED" precision="3" scale="0" nullable="true" jdbcType="-6"/>
       <column name="mf_date" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
       <column name="ep_date" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
-      <foreign-key name="stock_001_ibfk_1" columns="p_code" ref-table="product" ref-schema="" ref-catalog="vending_machine" ref-columns="code" update-rule="0" delete-rule="3" deferrability="2"/>
+      <primary-key name="PRIMARY" columns="p_code"/>
+      <foreign-key name="stock_001_ibfk_1" columns="p_code" ref-table="product" ref-schema="" ref-catalog="vending_machine" ref-columns="code" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="user" schema="" catalog="vending_machine" type="TABLE">
+      <column name="id" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
     </table>
   </data-source>
 </component>

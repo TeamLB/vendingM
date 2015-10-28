@@ -6,19 +6,22 @@
  * Time: ���� 1:29
  */
 
+session_start();
 
 
 function search_product($argCode)
 {
     $qurey = "select * from product where code in(select p_code from stock_001 where p_code = $argCode)";
-    $valueTemp = getDBValue(transmit_query(DB_Connect(), $qurey));
+    $_SESSION['search_Result'] = getDBValue(transmit_query(DB_Connect(), $qurey));
 }
 
-function search_sales(){
-
+function search_sales($argCode){
+    $qurey = "select * from product where code in (select p_code from sales where p_code = $argCode)";
+    $_SESSION['search_Result'] = getDBValue(transmit_query(DB_Connect(), $qurey));
 }
 
-function search_bills(){
-
+function search_bills($argCode){
+    $qurey = "select * from currency where code in (select p_code from bill where p_code = $argCode)";
+    $_SESSION['search_Result'] = getDBValue(transmit_query(DB_Connect(), $qurey));
 }
 
