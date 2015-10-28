@@ -3,12 +3,13 @@
  * Created by PhpStorm.
  * User: JongYoon
  * Date: 2015-10-26
- * Time: ¿ÀÈÄ 1:21
+ * Time: ï¿½ï¿½ï¿½ï¿½ 1:21
  */
 
 function DB_Connect(){
     return mysqli_connect("jycom.asuscomm.com", "vending", "DB!", "vending_machine", "3306");
 }
+
 
 
 function transmit_query($argQuery){
@@ -24,11 +25,3 @@ function getDBNumb($argResult){
     return mysqli_num_rows($argResult);
 }
 
-
-/*function select($argTable, $argConstraint){
-    $query = "select * from ".$argTable;
-
-    if($argConstraint){
-        $query .= "where "
-    }
-}*/
