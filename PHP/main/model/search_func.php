@@ -21,7 +21,7 @@ function search_sales($argCode){
 }
 
 function search_bills($argCode){
-    $qurey = "select * from currency where code in (select p_code from bill where p_code = $argCode)";
+    $qurey = "select * from currency where code in (select p_code from bill_1 where p_code = $argCode)";
     $_SESSION['search_Result'] = getDBValue(transmit_query(DB_Connect(), $qurey));
 }
 

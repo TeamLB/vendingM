@@ -10,7 +10,6 @@ include '../model/db_func.php';
 include '../model/login_func.php';
 include '../model/product_func.php';
 include '../model/stock_func.php';
-include '../model/bill_func.php';
 include '../model/search_func.php';
 
 
