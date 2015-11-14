@@ -1,0 +1,309 @@
+------------------------------
+Time & Date of Purchase: Sat Nov 07 18:12:25 KST 2015:
+Product(s): 
+ Mars Bar - ?0.50
+ Bounty Bar Original - ?0.50
+ Twix Double Bar - ?0.65
+ Walkers Sensations - Thai Sweet Chilli - ?1.10
+Total to be inserted: ?2.75
+Amount Input: ?3.85
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 07 18:13:28 KST 2015:
+Product(s): 
+ Mars Bar - ?0.50
+ Bounty Bar Original - ?0.50
+Total to be inserted: ?1.00
+Amount Input: ?1.15
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 11:33:06 KST 2015:
+Product(s): 
+ Wine Gums - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:06:19 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+ Twix Double Bar - ?0.65
+Total to be inserted: ?1.30
+Amount Input: ?1.45
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:09:17 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.40
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:11:11 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?0.70
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:19:37 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:20:01 KST 2015:
+Product(s): 
+ Coca-Cola (330ml) - ?0.75
+Total to be inserted: ?0.75
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:25:12 KST 2015:
+Product(s): 
+ Mars Bar - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?2.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:26:13 KST 2015:
+Product(s): 
+ Mars Bar - ?0.50
+ Mars Bar - ?0.50
+Total to be inserted: ?1.00
+Amount Input: ?2.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:26:48 KST 2015:
+Product(s): 
+ Mars Bar - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?2.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:27:23 KST 2015:
+Product(s): 
+ Mars Bar - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?2.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:28:23 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:35:57 KST 2015:
+Product(s): 
+ Mars Bar - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:36:19 KST 2015:
+Product(s): 
+ Walker's Ready Salted Crisps - ?0.55
+Total to be inserted: ?0.55
+Amount Input: ?0.60
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:46:45 KST 2015:
+Product(s): 
+ Bounty Bar Original - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:47:01 KST 2015:
+Product(s): 
+ Bounty Bar Original - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:47:11 KST 2015:
+Product(s): 
+ Bounty Bar Original - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 13:55:22 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:02:16 KST 2015:
+Product(s): 
+ Bounty Bar Original - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?0.60
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:03:22 KST 2015:
+Product(s): 
+ Bounty Bar Original - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?0.50
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:03:25 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:03:30 KST 2015:
+Product(s): 
+ Bounty Bar Original - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?0.50
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:03:40 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:05:11 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:05:26 KST 2015:
+Product(s): 
+ Bounty Bar Original - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:19:06 KST 2015:
+Product(s): 
+ Bounty Bar Original - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:21:42 KST 2015:
+Product(s): 
+ Bounty Bar Original - ?0.50
+Total to be inserted: ?0.50
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:23:49 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:24:21 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:25:48 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:28:13 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:31:37 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:31:58 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:35:28 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:51:19 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:51:45 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 09 14:55:03 KST 2015:
+Product(s): 
+ Twix Double Bar - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.00
+--------------------------
+
