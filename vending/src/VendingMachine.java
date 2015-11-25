@@ -9,9 +9,8 @@ public class VendingMachine extends JFrame implements ActionListener
 {
     //Here I will declare all my objects to be used, with their properties too.
 //datahandler
-    static DataHandler dh;
-    //static VendingMachineDBHandler vdh;
     //date and time
+    VendingMachineDBHandler vdh = new VendingMachineDBHandler();
     Date now = new Date();
     //date:
     int year = now.getYear() + 1900;
@@ -188,38 +187,75 @@ public class VendingMachine extends JFrame implements ActionListener
 
 
     String writeString = "";
+
     //End declarations of objects
 //calculation stuff:
-    double productTotal = 0;//holds value for total to be inserted (total price of all selected items)
-    double totalInserted = 0;//holds value for total money put in
+    static double productTotal = 0;//holds value for total to be inserted (total price of all selected items)
+    static double totalInserted = 0;//holds value for total money put in
     //stock number values which are deducted in value as each product is selected:
-    double product1stockNum = 10;
-    double product2stockNum = 10;
-    double product3stockNum = 10;
-    double product4stockNum = 10;
-    double product5stockNum = 10;
-    double product6stockNum = 10;
-    double product7stockNum = 10;
-    double product8stockNum = 10;
-    double product9stockNum = 10;
-    double product10stockNum = 10;
+    static double product1stockNum = 10;
+    static double product2stockNum = 10;
+    static double product3stockNum = 10;
+    static double product4stockNum = 10;
+    static double product5stockNum = 10;
+    static double product6stockNum = 10;
+    static double product7stockNum = 10;
+    static double product8stockNum = 10;
+    static double product9stockNum = 10;
+    static double product10stockNum = 10;
 //stock number values held for money, 20 of each coin *Note: I tried to name it as "5pStock, 10pStock etc.. but //this threw back alot of errors, so you cannot name things in java starting with an integer it doesnt like it.
-    double fivepStockNum = 20;
-    double tenpStockNum = 20;
-    double twentypStockNum = 20;
-    double fiftypStockNum = 20;
-    double onepStockNum = 20;
-    double twopStockNum = 20;
+    static double fivepStockNum = 20;
+    static double tenpStockNum = 20;
+    static double twentypStockNum = 20;
+    static double fiftypStockNum = 20;
+    static double onepStockNum = 20;
+    static double twopStockNum = 20;
+    private String addToSelection;
+
+
+
     //end calculation stuff.
     public static void main(String[] args)
     {
-        VendingMachine jf = new VendingMachine();
-        dh = new FileHandler();//data handler for file writer
+                         VendingMachine jf = new VendingMachine();
+
     }
+
+
 
     public VendingMachine()
 
     {
+        Object[][] Pstock = vdh.setPstock();
+        Object[][] Mstock = vdh.setMstock();
+        System.out.println(Pstock);
+        System.out.println(Mstock);
+        this.product1stockNum = Double.parseDouble((String) Pstock[0][1]);
+        this.product2stockNum = Double.parseDouble((String) Pstock[1][1]);
+        this.product3stockNum = Double.parseDouble((String) Pstock[2][1]);
+        this.product4stockNum = Double.parseDouble((String) Pstock[3][1]);
+        this.product5stockNum = Double.parseDouble((String) Pstock[4][1]);
+        this.product6stockNum = Double.parseDouble((String) Pstock[5][1]);
+        this.product7stockNum = Double.parseDouble((String) Pstock[6][1]);
+        this.product8stockNum = Double.parseDouble((String) Pstock[7][1]);
+        this.product9stockNum = Double.parseDouble((String) Pstock[8][1]);
+        this.product10stockNum = Double.parseDouble((String) Pstock[9][1]);
+        this.fivepStockNum = Double.parseDouble((String) Mstock[0][1]);
+        this.tenpStockNum = Double.parseDouble((String) Mstock[1][1]);
+        this.twentypStockNum = Double.parseDouble((String) Mstock[2][1]);
+        this.fiftypStockNum = Double.parseDouble((String) Mstock[3][1]);
+        this.onepStockNum = Double.parseDouble((String) Mstock[4][1]);
+        this.twopStockNum = Double.parseDouble((String) Mstock[5][1]);
+        /*for(int i = 0 ; i <Pstock.length ; i++)
+            this.product1stockNum = Double.parseDouble((String) Pstock[i][1]);
+        }
+
+
+        for(int i = 0 ; i <Mstock.length ; i++){
+
+        }*/
+
+
         setLayout(null);//Null layout for absolute positioning
         setSize(830, 705);//Dimensions 830x705
         setTitle("Super Awesome Vending Machine");//Title
@@ -565,6 +601,13 @@ public class VendingMachine extends JFrame implements ActionListener
     {
         changeFrame.setVisible(false);
     }
+
+    public void dbString(String selected){
+        addToSelection = selectedItems.getText() + selected+"\n";
+        selectedItems.setText(addToSelection);
+    }
+
+
     public void actionPerformed(ActionEvent e)
     {
 //event handling code here
@@ -588,6 +631,8 @@ public class VendingMachine extends JFrame implements ActionListener
 //product1
         if (e.getSource() == product1)
         {
+
+            //dbString("Mars Bar");
 //adds product to the database
             writeString = "INSERT INTO VendingMachine(Products, Price) VALUES('Mars Bar', '0.50')";
 //adds the text string the the selected items text field
@@ -603,7 +648,7 @@ public class VendingMachine extends JFrame implements ActionListener
             if (product1stockNum == 0)
             {
                 product1.setEnabled(false);
-                showMessageDialog(null, "Sorry, Mars Bar's are currently out of stock", "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                showMessageDialog(null, "Sorry, Mars Bar's are currently out of stock", "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //product2
@@ -624,7 +669,7 @@ public class VendingMachine extends JFrame implements ActionListener
             if (product2stockNum == 0)
             {
                 product2.setEnabled(false);
-                        showMessageDialog(null, "Sorry, Bounty Bar's are currently out of stock", "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                        showMessageDialog(null, "Sorry, Bounty Bar's are currently out of stock", "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //product3
@@ -647,7 +692,7 @@ public class VendingMachine extends JFrame implements ActionListener
             {
                 product3.setEnabled(false);
                 showMessageDialog(null, "Sorry, Twix Bar's are currently out of stock",
-                        "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                        "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //product4
@@ -656,7 +701,7 @@ public class VendingMachine extends JFrame implements ActionListener
             //adds product to the database
             writeString = "INSERT INTO VendingMachine(Products, Price) VALUES('Walker's Ready Salted Crisps', '0.55')";
 //adds the text string the the selected items text field
-            addToSelection = selectedItems.getText() + "Walker's Ready Salted Crisps\n";
+            addToSelection = selectedItems.getText() + "Walker\'s Ready Salted Crisps\n";
             selectedItems.setText(addToSelection);
 //adds 55p to the product total selected area
             productTotal += 0.55;
@@ -668,7 +713,7 @@ public class VendingMachine extends JFrame implements ActionListener
             if (product4stockNum == 0)
             {
                 product4.setEnabled(false);
-                showMessageDialog(null, "Sorry, Walkers Ready Salted Crisp's are currently out of stock", "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                showMessageDialog(null, "Sorry, Walkers Ready Salted Crisp's are currently out of stock", "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 
@@ -690,7 +735,7 @@ public class VendingMachine extends JFrame implements ActionListener
             if (product5stockNum == 0)
             {
                 product5.setEnabled(false);
-                showMessageDialog(null, "Sorry, Monster Munch Crisp's are currently out of stock", "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                showMessageDialog(null, "Sorry, Monster Munch Crisp's are currently out of stock", "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //product6
@@ -712,7 +757,7 @@ public class VendingMachine extends JFrame implements ActionListener
 
             {
                 product6.setEnabled(false);
-                showMessageDialog(null, "Sorry, Walkers Sensation's are currently out of stock", "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                showMessageDialog(null, "Sorry, Walkers Sensation's are currently out of stock", "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //product7
@@ -735,7 +780,7 @@ public class VendingMachine extends JFrame implements ActionListener
             {
                 product7.setEnabled(false);
                 showMessageDialog(null, "Sorry, Coca-Cola is currently out of stock",
-                        "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                        "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //product8
@@ -759,7 +804,7 @@ public class VendingMachine extends JFrame implements ActionListener
             {
                 product8.setEnabled(false);
                 showMessageDialog(null, "Sorry, Dr Pepper is currently out of stock",
-                        "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                        "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //product9
@@ -781,7 +826,7 @@ public class VendingMachine extends JFrame implements ActionListener
             {
                 product9.setEnabled(false);
                 showMessageDialog(null, "Sorry, Fruit Pastels are currently out of stock",
-                        "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                        "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //product10
@@ -804,7 +849,7 @@ public class VendingMachine extends JFrame implements ActionListener
             {
                 product10.setEnabled(false);
                 showMessageDialog(null, "Sorry, Wine Gums are currently out of stock",
-                        "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                        "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //cancel order
@@ -845,14 +890,11 @@ public class VendingMachine extends JFrame implements ActionListener
             }
             else {
                 String productsFW = selectedItems.getText();
-                String productsST = selectedItemTotal.getText();
                 String totalFW = selectedItemTotal.getText();
-                String inputFW = moneyInput.getText();
 
                 productsFW = productsFW.trim();
                 //System.out.println(productsFW+"\n"+productsST+"\n"+totalFW);
-                VendingMachineDBHandler vdh = new VendingMachineDBHandler();
-                vdh.main(productsFW, productsST, totalFW);
+                vdh.madeChoice(productsFW, totalFW);
 
                 /*try{
                     vdh.madeChoice(productsFW, productsST, totalFW);
@@ -961,7 +1003,7 @@ public class VendingMachine extends JFrame implements ActionListener
             if (fivepStockNum == 0)
             {
                 CFfivePenceButton.setEnabled(false);
-                showMessageDialog(null, "Sorry, there are no 5 pence coins left.\n\nPlease select other coins.", "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                showMessageDialog(null, "Sorry, there are no 5 pence coins left.\n\nPlease select other coins.", "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //CF 10p
@@ -989,7 +1031,7 @@ public class VendingMachine extends JFrame implements ActionListener
             if (tenpStockNum == 0)
             {
                 CFtenPenceButton.setEnabled(false);
-                showMessageDialog(null, "Sorry, there are no 10 pence coins left.\n\nPlease select other coins.", "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                showMessageDialog(null, "Sorry, there are no 10 pence coins left.\n\nPlease select other coins.", "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //CF 20p
@@ -1018,7 +1060,7 @@ public class VendingMachine extends JFrame implements ActionListener
             if (twentypStockNum == 0)
             {
                 CFtwentyPenceButton.setEnabled(false);
-                showMessageDialog(null, "Sorry, there are no 20 pence coins left.\n\nPlease select other coins.", "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                showMessageDialog(null, "Sorry, there are no 20 pence coins left.\n\nPlease select other coins.", "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //CF 50p
@@ -1047,7 +1089,7 @@ public class VendingMachine extends JFrame implements ActionListener
             if (fiftypStockNum == 0)
             {
                 CFfiftyPenceButton.setEnabled(false);
-                showMessageDialog(null, "Sorry, there are no 50 pence coins left.\n\nPlease select other coins.", "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                showMessageDialog(null, "Sorry, there are no 50 pence coins left.\n\nPlease select other coins.", "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //CF 1pound
@@ -1075,7 +1117,7 @@ public class VendingMachine extends JFrame implements ActionListener
             if (onepStockNum == 0)
             {
                 CFonePoundButton.setEnabled(false);
-                showMessageDialog(null, "Sorry, there are no 1 pound coins left.\n\nPlease select other coins.", "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                showMessageDialog(null, "Sorry, there are no 1 pound coins left.\n\nPlease select other coins.", "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //CF 2pound
@@ -1104,7 +1146,7 @@ public class VendingMachine extends JFrame implements ActionListener
             if (twopStockNum == 0)
             {
                 CFtwoPoundButton.setEnabled(false);
-                showMessageDialog(null, "Sorry, there are no 2 pound coins left.\n\nPlease select other coins.", "Stock Depleted!", JOptionPane.WARNING_MESSAGE);
+                showMessageDialog(null, "Sorry, there are no 2 pound coins left.\n\nPlease select other coins.", "Pstock Depleted!", JOptionPane.WARNING_MESSAGE);
             }
         }
 //CF finished button
