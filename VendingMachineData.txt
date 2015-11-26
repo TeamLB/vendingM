@@ -1,0 +1,586 @@
+------------------------------
+Time & Date of Purchase: Sat Nov 14 00:05:37 KST 2015:
+Product(s): 
+ Wine Gums - ?0.65
+ Wine Gums - ?0.65
+Total to be inserted: ?1.30
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 00:05:51 KST 2015:
+Product(s): 
+ Wine Gums - ?0.65
+ Wine Gums - ?0.65
+Total to be inserted: ?1.30
+Amount Input: ?13.95
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 12:11:16 KST 2015:
+Product(s): 
+ Wine Gums - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?1.40
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 14:24:41 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 14:24:56 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?2.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 14:25:05 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 14:25:06 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 14:25:06 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 14:25:14 KST 2015:
+Product(s): 
+ Fruit Pastels - ?0.60
+Total to be inserted: ?0.60
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 14:25:29 KST 2015:
+Product(s): 
+ Fruit Pastels - ?0.60
+ Walker's Ready Salted Crisps - ?0.55
+ Twix Double Bar - ?0.65
+Total to be inserted: ?1.80
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 14:25:49 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 14:25:49 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 14:25:53 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.80
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 14:25:59 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Sat Nov 14 17:06:08 KST 2015:
+Product(s): 
+ Wine Gums - ?0.65
+Total to be inserted: ?0.65
+Amount Input: ?18.25
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 16 13:22:24 KST 2015:
+Product(s): 
+ Wine Gums - ?0.65
+ Wine Gums - ?0.65
+ Wine Gums - ?0.65
+ Fruit Pastels - ?0.60
+Total to be inserted: ?2.55
+Amount Input: ?16.10
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 16 14:07:43 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 16 14:07:58 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.40
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 16 14:08:01 KST 2015:
+Product(s): 
+ Fruit Pastels - ?0.60
+Total to be inserted: ?0.60
+Amount Input: ?0.40
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 16 14:27:22 KST 2015:
+Product(s): 
+ Fruit Pastels - ?0.60
+ Wine Gums - ?0.65
+ Wine Gums - ?0.65
+Total to be inserted: ?14000.00
+Amount Input: ?10000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Tue Nov 17 09:26:02 KST 2015:
+Product(s): 
+ Walker's Ready Salted Crisps - ?0.55
+ Fruit Pastels - ?0.60
+ 호로요이10 - 5000원
+ Monster Munch - Pickled Onion - ?0.70
+ Twix Double Bar - ?0.65
+ Dr Pepper (330ml) - ?0.75
+ Bounty Bar Original - ?0.50
+ Twix Double Bar - ?0.65
+ Twix Double Bar - ?0.65
+ Twix Double Bar - ?0.65
+ Twix Double Bar - ?0.65
+ Twix Double Bar - ?0.65
+ Twix Double Bar - ?0.65
+ Twix Double Bar - ?0.65
+ Twix Double Bar - ?0.65
+ Twix Double Bar - ?0.65
+ Walker's Ready Salted Crisps - ?0.55
+ Walker's Ready Salted Crisps - ?0.55
+ Walker's Ready Salted Crisps - ?0.55
+ Walker's Ready Salted Crisps - ?0.55
+ Walker's Ready Salted Crisps - ?0.55
+ Walker's Ready Salted Crisps - ?0.55
+ Walker's Ready Salted Crisps - ?0.55
+ Walker's Ready Salted Crisps - ?0.55
+ Walker's Ready Salted Crisps - ?0.55
+ Monster Munch - Pickled Onion - ?0.70
+ Monster Munch - Pickled Onion - ?0.70
+ Monster Munch - Pickled Onion - ?0.70
+ Monster Munch - Pickled Onion - ?0.70
+ Monster Munch - Pickled Onion - ?0.70
+ Monster Munch - Pickled Onion - ?0.70
+ Monster Munch - Pickled Onion - ?0.70
+ Monster Munch - Pickled Onion - ?0.70
+ Monster Munch - Pickled Onion - ?0.70
+ Dr Pepper (330ml) - ?0.75
+Total to be inserted: ?57500.00
+Amount Input: ?75000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 19 20:45:51 KST 2015:
+Product(s): 
+ Bounty Bar Original - ?0.50
+ Twix Double Bar - ?0.65
+ Walker's Ready Salted Crisps - ?0.55
+ Monster Munch - Pickled Onion - ?0.70
+ 호로요이10 - 5000원
+ Fruit Pastels - ?0.60
+ Dr Pepper (330ml) - ?0.75
+ Coca-Cola (330ml) - ?0.75
+Total to be inserted: ?20500.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 23 14:32:54 KST 2015:
+Product(s): 
+ Fruit Pastels - ?0.60
+Total to be inserted: ?4000.00
+Amount Input: ?7160.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 23 14:34:22 KST 2015:
+Product(s): 
+ Fruit Pastels - ?0.60
+Total to be inserted: ?4000.00
+Amount Input: ?20500.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 23 14:36:06 KST 2015:
+Product(s): 
+ Monster Munch - Pickled Onion - ?0.70
+Total to be inserted: ?2000.00
+Amount Input: ?10500.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 23 14:40:16 KST 2015:
+Product(s): 
+ 호로요이10 - 5000원
+Total to be inserted: ?5000.00
+Amount Input: ?5500.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 23 14:42:13 KST 2015:
+Product(s): 
+ 호로요이10 - 5000원
+ 호로요이10 - 5000원
+Total to be inserted: ?10000.00
+Amount Input: ?25000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 23 14:42:45 KST 2015:
+Product(s): 
+ Fruit Pastels - ?0.60
+Total to be inserted: ?4000.00
+Amount Input: ?15000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Mon Nov 23 14:46:00 KST 2015:
+Product(s): 
+ Fruit Pastels - ?0.60
+Total to be inserted: ?4000.00
+Amount Input: ?365000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 17:14:57 KST 2015:
+Product(s): 
+ 레몬샤워 - 1000원
+ 레몬샤워 - 1000원
+ 레몬샤워 - 1000원
+ 레몬샤워 - 1000원
+ 레몬샤워 - 1000원
+ 레몬샤워 - 1000원
+ 레몬샤워 - 1000원
+ 레몬샤워 - 1000원
+ 레몬샤워 - 1000원
+ 레몬샤워 - 1000원
+ 벌꿀레몬 - 2000원
+ 벌꿀레몬 - 2000원
+ 벌꿀레몬 - 2000원
+ 벌꿀레몬 - 2000원
+ 벌꿀레몬 - 2000원
+ 벌꿀레몬 - 2000원
+ 벌꿀레몬 - 2000원
+ 벌꿀레몬 - 2000원
+ 벌꿀레몬 - 2000원
+ 벌꿀레몬 - 2000원
+ 사과 - 1000원
+ 사과 - 1000원
+ 사과 - 1000원
+ 사과 - 1000원
+ 사과 - 1000원
+ 사과 - 1000원
+ 사과 - 1000원
+ 사과 - 1000원
+ 사과 - 1000원
+ 사과 - 1000원
+ 복숭아 - 500원
+ 복숭아 - 500원
+ 복숭아 - 500원
+ 복숭아 - 500원
+ 복숭아 - 500원
+ 복숭아 - 500원
+ 복숭아 - 500원
+ 복숭아 - 500원
+ 복숭아 - 500원
+ 복숭아 - 500원
+ 밀키스 - 500원
+ 밀키스 - 500원
+ 밀키스 - 500원
+ 밀키스 - 500원
+ 밀키스 - 500원
+ 밀키스 - 500원
+ 밀키스 - 500원
+ 밀키스 - 500원
+ 밀키스 - 500원
+ 밀키스 - 500원
+ 포도 - 3000원
+ 포도 - 3000원
+ 포도 - 3000원
+ 포도 - 3000원
+ 포도 - 3000원
+ 포도 - 3000원
+ 포도 - 3000원
+ 포도 - 3000원
+ 포도 - 3000원
+ 포도 - 3000원
+ 매실술소다 - 4000원
+ 매실술소다 - 4000원
+ 매실술소다 - 4000원
+ 매실술소다 - 4000원
+ 매실술소다 - 4000원
+ 매실술소다 - 4000원
+ 매실술소다 - 4000원
+ 매실술소다 - 4000원
+ 매실술소다 - 4000원
+ 매실술소다 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+ 와인 - 5000원
+ 와인 - 5000원
+ 와인 - 5000원
+ 와인 - 5000원
+ 와인 - 5000원
+ 와인 - 5000원
+ 와인 - 5000원
+ 와인 - 5000원
+ 와인 - 5000원
+ 와인 - 5000원
+Total to be inserted: ?240000.00
+Amount Input: ?255000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 17:20:44 KST 2015:
+Product(s): 
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+Total to be inserted: ?8000.00
+Amount Input: ?10000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 17:21:10 KST 2015:
+Product(s): 
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+Total to be inserted: ?8000.00
+Amount Input: ?10000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 19:18:27 KST 2015:
+Product(s): 
+ 와인 - 5000원
+ 와인 - 5000원
+Total to be inserted: ?10000.00
+Amount Input: ?15000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 19:28:12 KST 2015:
+Product(s): 
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+Total to be inserted: ?8000.00
+Amount Input: ?10000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 19:47:31 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 19:49:22 KST 2015:
+Product(s): 
+ 카시스오렌지 - 4000원
+Total to be inserted: ?4000.00
+Amount Input: ?5000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 19:54:31 KST 2015:
+Product(s): 
+ 카시스오렌지 - 4000원
+ 카시스오렌지 - 4000원
+Total to be inserted: ?8000.00
+Amount Input: ?9010.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:00:24 KST 2015:
+Product(s): 
+ 카시스오렌지 - 4000원
+Total to be inserted: ?4000.00
+Amount Input: ?5000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:02:50 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:03:01 KST 2015:
+Product(s): 
+ 카시스오렌지 - 4000원
+Total to be inserted: ?4000.00
+Amount Input: ?5000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:03:58 KST 2015:
+Product(s): 
+ 와인 - 5000원
+Total to be inserted: ?5000.00
+Amount Input: ?10510.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:05:57 KST 2015:
+Product(s): 
+ 카시스오렌지 - 4000원
+Total to be inserted: ?4000.00
+Amount Input: ?10000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:06:27 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:06:28 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:06:30 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:06:36 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:06:37 KST 2015:
+Product(s): 
+Total to be inserted: ?0.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:06:47 KST 2015:
+Product(s): 
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+Total to be inserted: ?12000.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:06:47 KST 2015:
+Product(s): 
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+Total to be inserted: ?12000.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:06:48 KST 2015:
+Product(s): 
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+Total to be inserted: ?12000.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:06:48 KST 2015:
+Product(s): 
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+Total to be inserted: ?12000.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:06:50 KST 2015:
+Product(s): 
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+ 아이스티 - 4000원
+Total to be inserted: ?12000.00
+Amount Input: ?0.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:08:18 KST 2015:
+Product(s): 
+ 복숭아 - 500원
+Total to be inserted: ?500.00
+Amount Input: ?1000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:10:34 KST 2015:
+Product(s): 
+ 카시스오렌지 - 4000원
+Total to be inserted: 4000.00
+Amount Input: 5000.00
+--------------------------
+
+------------------------------
+Time & Date of Purchase: Thu Nov 26 20:11:19 KST 2015:
+Product(s): 
+Total to be inserted: 0.00
+Amount Input: 0.00
+--------------------------
+
