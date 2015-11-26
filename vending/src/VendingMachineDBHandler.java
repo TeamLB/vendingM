@@ -1,24 +1,37 @@
+import javax.crypto.spec.PSource;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.Objects;
 
 
 class VendingMachineDBHandler
 {
     //Connection order;
     static Statement myStatement;
-    ResultSet rs;
+    static ResultSet rs;
     //public Vector<Object> stock = new Vector<Object>();
-    public Object[][] Pstock;
-    public Object[][] Mstock;
+    static int Pcount;
+    static int Mcount;
     public VendingMachineDBHandler()
     {
+
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            //String sourceURL = "jdbc:odbc:Driver={Microsoft Access Driver (*.mdb)};DBQ=VendingMachineDB.mdb;";
-
             Connection order = DriverManager.getConnection("jdbc:mysql://localhost:3306/vendtest", "root","DB!");
-            //String sourceURL = "jdbc:mariadb:"
-            //order = DriverManager.getConnection(sourceURL, "admin", "");
             myStatement = order.createStatement();
+            String writeString = "select count(*) from pstock";
+            rs = myStatement.executeQuery(writeString);
+            while(rs.next()) {
+                Pcount = rs.getInt(1);
+            }
+
+            writeString = "select count(*) from mstock";
+            rs = myStatement.executeQuery(writeString);
+            while(rs.next()) {
+                Mcount = rs.getInt(1);
+            }
+
+            System.out.println("Pcount = " + Pcount + ", Mcount = " + Mcount);
         }
 // The following exceptions must be caught
         catch (ClassNotFoundException cnfe)
@@ -30,16 +43,27 @@ class VendingMachineDBHandler
             System.out.println(sqle);
         }
     }
-    public Object[][] setPstock(){
+
+
+    //public ArrayList<Object> setStock(Integer Pcount, Integer Mcount){
+    public ArrayList<Object> setStock(){
+
+
+        Object[][] Pstock = new Object[Pcount][2];
+        Object[][] Mstock = new Object[Mcount][2];
+        ArrayList<Object> stock = new ArrayList<Object>();
 
         String writeString = "select * from pstock";
-        System.out.println(writeString);
+
         int cnt = 0;
         try{
             rs = myStatement.executeQuery(writeString);
             while(rs.next()){
-                Pstock[cnt][0] = rs.getString(0);
-                Pstock[cnt][1] = rs.getInt(1);
+                /*System.out.println(rs.getString(1));
+                System.out.println(rs.getString(2));*/
+
+                Pstock[cnt][0] = rs.getString(1);
+                Pstock[cnt][1] = Integer.parseInt(String.valueOf(rs.getInt(2)));
                 cnt++;
             }
         }
@@ -47,19 +71,15 @@ class VendingMachineDBHandler
             System.out.println(sqle);
         }
 
-        return Pstock;
-    }
+        writeString = "select * from mstock";
 
-    public Object[][] setMstock(){
 
-        String writeString = "select * from mstock";
-        System.out.println(writeString);
-        int cnt = 0;
+        cnt = 0;
         try{
             rs = myStatement.executeQuery(writeString);
             while(rs.next()){
-                Pstock[cnt][0] = rs.getString(0);
-                Pstock[cnt][1] = rs.getInt(1);
+                Mstock[cnt][0] = rs.getString(1);
+                Mstock[cnt][1] = Integer.parseInt(String.valueOf(rs.getInt(2)));
                 cnt++;
             }
         }
@@ -67,39 +87,14 @@ class VendingMachineDBHandler
             System.out.println(sqle);
         }
 
-        return Mstock;
-    }
 
-    public void madeChoice(String Product, String Total)
-    {
+        stock.add(0, Pstock);
+        stock.add(1, Mstock);
 
-        java.util.Date dt = new java.util.Date();
-
-        java.text.SimpleDateFormat sdf =
-                new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-
-        String currentTime = sdf.format(dt);
-
-        System.out.println(Product+"\n"+Total);
-        String writeString = "INSERT INTO VendingMachine(Date, Product, Total) VALUES('" + currentTime + "','" + Product + "','"+Total+"')";
-
-        System.out.println(writeString);
-        //System.out.println(currentTime);
-        try{
-            myStatement.executeUpdate(writeString);
-        }
-        catch (SQLException sqle)
-        {
-            System.out.println(sqle);
-        }
+        return stock;
     }
 
 
-    /*public void main(String productsFW, String totalFW) {
-        VendingMachineDBHandler VDB = new VendingMachineDBHandler();
-        VDB.madeChoice(productsFW, totalFW);
-
-    }*/
 }
 
 

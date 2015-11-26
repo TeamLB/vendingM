@@ -1,16 +1,17 @@
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import static javax.swing.JOptionPane.*;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-import java.sql.*;
+
 public class VendingMachine extends JFrame implements ActionListener
 {
     //Here I will declare all my objects to be used, with their properties too.
 //datahandler
     //date and time
-    VendingMachineDBHandler vdh = new VendingMachineDBHandler();
+    static VendingMachineDBHandler vdh = new VendingMachineDBHandler();
     Date now = new Date();
     //date:
     int year = now.getYear() + 1900;
@@ -186,30 +187,31 @@ public class VendingMachine extends JFrame implements ActionListener
     Statement myStatement;*/
 
 
-    String writeString = "";
-
+    ArrayList <String> writeString = new ArrayList<String>();
+    static int index_i =0;
+    static int index_j =0;
     //End declarations of objects
 //calculation stuff:
     static double productTotal = 0;//holds value for total to be inserted (total price of all selected items)
     static double totalInserted = 0;//holds value for total money put in
     //stock number values which are deducted in value as each product is selected:
-    static double product1stockNum = 10;
-    static double product2stockNum = 10;
-    static double product3stockNum = 10;
-    static double product4stockNum = 10;
-    static double product5stockNum = 10;
-    static double product6stockNum = 10;
-    static double product7stockNum = 10;
-    static double product8stockNum = 10;
-    static double product9stockNum = 10;
-    static double product10stockNum = 10;
+    static int product1stockNum;
+    static int product2stockNum;
+    static int product3stockNum;
+    static int product4stockNum;
+    static int product5stockNum;
+    static int product6stockNum;
+    static int product7stockNum;
+    static int product8stockNum;
+    static int product9stockNum;
+    static int product10stockNum;
 //stock number values held for money, 20 of each coin *Note: I tried to name it as "5pStock, 10pStock etc.. but //this threw back alot of errors, so you cannot name things in java starting with an integer it doesnt like it.
-    static double fivepStockNum = 20;
-    static double tenpStockNum = 20;
-    static double twentypStockNum = 20;
-    static double fiftypStockNum = 20;
-    static double onepStockNum = 20;
-    static double twopStockNum = 20;
+    static int fivepStockNum;
+    static int tenpStockNum;
+    static int twentypStockNum;
+    static int fiftypStockNum;
+    static int onepStockNum;
+    static int twopStockNum;
     private String addToSelection;
 
 
@@ -217,8 +219,7 @@ public class VendingMachine extends JFrame implements ActionListener
     //end calculation stuff.
     public static void main(String[] args)
     {
-                         VendingMachine jf = new VendingMachine();
-
+        new VendingMachine();
     }
 
 
@@ -226,26 +227,40 @@ public class VendingMachine extends JFrame implements ActionListener
     public VendingMachine()
 
     {
-        Object[][] Pstock = vdh.setPstock();
-        Object[][] Mstock = vdh.setMstock();
-        System.out.println(Pstock);
-        System.out.println(Mstock);
-        this.product1stockNum = Double.parseDouble((String) Pstock[0][1]);
-        this.product2stockNum = Double.parseDouble((String) Pstock[1][1]);
-        this.product3stockNum = Double.parseDouble((String) Pstock[2][1]);
-        this.product4stockNum = Double.parseDouble((String) Pstock[3][1]);
-        this.product5stockNum = Double.parseDouble((String) Pstock[4][1]);
-        this.product6stockNum = Double.parseDouble((String) Pstock[5][1]);
-        this.product7stockNum = Double.parseDouble((String) Pstock[6][1]);
-        this.product8stockNum = Double.parseDouble((String) Pstock[7][1]);
-        this.product9stockNum = Double.parseDouble((String) Pstock[8][1]);
-        this.product10stockNum = Double.parseDouble((String) Pstock[9][1]);
-        this.fivepStockNum = Double.parseDouble((String) Mstock[0][1]);
-        this.tenpStockNum = Double.parseDouble((String) Mstock[1][1]);
-        this.twentypStockNum = Double.parseDouble((String) Mstock[2][1]);
-        this.fiftypStockNum = Double.parseDouble((String) Mstock[3][1]);
-        this.onepStockNum = Double.parseDouble((String) Mstock[4][1]);
-        this.twopStockNum = Double.parseDouble((String) Mstock[5][1]);
+
+        ArrayList<Object> stock = vdh.setStock();
+        /*((String) stock.get(0))*/
+        Object[][] Pstock = (Object[][]) stock.get(0);
+        Object[][] Mstock = (Object[][]) stock.get(1);
+        //this.product1stockNum = (int) Pstock[0][1];
+        this.product1stockNum = ((int) Pstock[0][1]);
+        this.product2stockNum = ((int) Pstock[1][1]);
+        this.product3stockNum = ((int) Pstock[2][1]);
+        this.product4stockNum = ((int) Pstock[3][1]);
+        this.product5stockNum = ((int) Pstock[4][1]);
+        this.product6stockNum = ((int) Pstock[5][1]);
+        this.product7stockNum = ((int) Pstock[6][1]);
+        this.product8stockNum = ((int) Pstock[7][1]);
+        this.product9stockNum = ((int) Pstock[8][1]);
+        this.product10stockNum = ((int) Pstock[9][1]);
+        this.fivepStockNum = (int) Mstock[0][1];
+        this.tenpStockNum = (int) Mstock[1][1];
+        this.twentypStockNum = (int) Mstock[2][1];
+        this.fiftypStockNum = (int) Mstock[3][1];
+        this.onepStockNum = (int) Mstock[4][1];
+        this.twopStockNum = (int) Mstock[5][1];
+
+        product1stock.setText(String.valueOf(product1stockNum));
+        product2stock.setText(String.valueOf(product2stockNum));
+        product3stock.setText(String.valueOf(product3stockNum));
+        product4stock.setText(String.valueOf(product4stockNum));
+        product5stock.setText(String.valueOf(product5stockNum));
+        product6stock.setText(String.valueOf(product6stockNum));
+        product7stock.setText(String.valueOf(product7stockNum));
+        product8stock.setText(String.valueOf(product8stockNum));
+        product9stock.setText(String.valueOf(product9stockNum));
+        product10stock.setText(String.valueOf(product10stockNum));
+
         /*for(int i = 0 ; i <Pstock.length ; i++)
             this.product1stockNum = Double.parseDouble((String) Pstock[i][1]);
         }
@@ -634,7 +649,7 @@ public class VendingMachine extends JFrame implements ActionListener
 
             //dbString("Mars Bar");
 //adds product to the database
-            writeString = "INSERT INTO VendingMachine(Products, Price) VALUES('Mars Bar', '0.50')";
+
 //adds the text string the the selected items text field
             addToSelection = selectedItems.getText() + "Mars Bar\n";
             selectedItems.setText(addToSelection);
@@ -655,7 +670,8 @@ public class VendingMachine extends JFrame implements ActionListener
         if (e.getSource() == product2)
         {
 //adds product to the database
-            writeString = "INSERT INTO VendingMachine(Products, Price) VALUES('Bounty Bar', '0.50')";
+            writeString.set(index_i, "INSERT INTO VendingMachine(Products, Price) VALUES('Bounty Bar', '0.50')");
+            index_i++;
 //adds the text string the the selected items text field
             addToSelection = selectedItems.getText() + "Bounty Bar Original\n";
             selectedItems.setText(addToSelection);
@@ -677,7 +693,8 @@ public class VendingMachine extends JFrame implements ActionListener
         {
 
 //adds product to the database
-            writeString = "INSERT INTO VendingMachine(Products, Price) VALUES('Twix Double Bar', '0.65')";
+            writeString.set(index_i, "INSERT INTO VendingMachine(Products, Price) VALUES('Twix Double Bar', '0.65')");
+            index_i++;
 //adds the text string the the selected items text field
             addToSelection = selectedItems.getText() + "Twix Double Bar\n";
             selectedItems.setText(addToSelection);
@@ -699,7 +716,8 @@ public class VendingMachine extends JFrame implements ActionListener
         if (e.getSource() == product4)
         {
             //adds product to the database
-            writeString = "INSERT INTO VendingMachine(Products, Price) VALUES('Walker's Ready Salted Crisps', '0.55')";
+            writeString.set(index_i, "INSERT INTO VendingMachine(Products, Price) VALUES('Walker's Ready Salted Crisps', '0.55')");
+            index_i++;
 //adds the text string the the selected items text field
             addToSelection = selectedItems.getText() + "Walker\'s Ready Salted Crisps\n";
             selectedItems.setText(addToSelection);
@@ -721,7 +739,8 @@ public class VendingMachine extends JFrame implements ActionListener
         if (e.getSource() == product5)
         {
             //adds product to the database
-            writeString = "INSERT INTO VendingMachine(Products, Price) VALUES('Monster Munch - Pickled Onion', '0.70')";
+            writeString.set(index_i, "INSERT INTO VendingMachine(Products, Price) VALUES('Monster Munch - Pickled Onion', '0.70')");
+            index_i++;
 //adds the text string the the selected items text field
             addToSelection = selectedItems.getText() + "Monster Munch - Pickled Onion\n";
             selectedItems.setText(addToSelection);
@@ -742,7 +761,8 @@ public class VendingMachine extends JFrame implements ActionListener
         if (e.getSource() == product6)
         {
             //adds product to the database
-            writeString = "INSERT INTO VendingMachine(Products, Price) VALUES('Walkers Sensations - Thai Sweet Chilli', '1.10')";
+            writeString.set(index_i, "INSERT INTO VendingMachine(Products, Price) VALUES('Walkers Sensations - Thai Sweet Chilli', '1.10')");
+            index_i++;
 //adds the text string the the selected items text field
             addToSelection = selectedItems.getText() + "Walkers Sensations - Thai Sweet Chilli\n";
             selectedItems.setText(addToSelection);
@@ -764,7 +784,8 @@ public class VendingMachine extends JFrame implements ActionListener
         if (e.getSource() == product7)
         {
             //adds product to the database
-            writeString = "INSERT INTO VendingMachine(Products, Price) VALUES('Coca-Cola (330ml)', '0.75')";
+            writeString.set(index_i, "INSERT INTO VendingMachine(Products, Price) VALUES('Coca-Cola (330ml)', '0.75')");
+            index_i++;
             showMessageDialog(null, "Please exercise caution when opening this drink.\n\nIt may be shaken.", "Caution!", JOptionPane.WARNING_MESSAGE);
 //adds the text string the the selected items text field
             addToSelection = selectedItems.getText() + "Coca-Cola (330ml)\n";
@@ -787,7 +808,8 @@ public class VendingMachine extends JFrame implements ActionListener
         if (e.getSource() == product8)
         {
             //adds product to the database
-            writeString = "INSERT INTO VendingMachine(Products, Price) VALUES('Dr Pepper (330ml)', '0.75')";
+            writeString.set(index_i, "INSERT INTO VendingMachine(Products, Price) VALUES('Dr Pepper (330ml)', '0.75')");
+            index_i++;
             showMessageDialog(null, "Please exercise caution when opening this drink.\n\nIt may be shaken.", "Caution!", JOptionPane.WARNING_MESSAGE);
 //adds the text string the the selected items text field
             addToSelection = selectedItems.getText() + "Dr Pepper (330ml)\n";
@@ -811,7 +833,8 @@ public class VendingMachine extends JFrame implements ActionListener
         if (e.getSource() == product9)
         {
             //adds product to the database
-            writeString = "INSERT INTO VendingMachine(Products, Price) VALUES('Fruit Pastels', '0.60')";
+            writeString.set(index_i, "INSERT INTO VendingMachine(Products, Price) VALUES('Fruit Pastels', '0.60')");
+            index_i++;
 //adds the text string the the selected items text field
             addToSelection = selectedItems.getText() + "Fruit Pastels\n";
             selectedItems.setText(addToSelection);
@@ -833,7 +856,8 @@ public class VendingMachine extends JFrame implements ActionListener
         if (e.getSource() == product10)
         {
             //adds product to the database
-            writeString = "INSERT INTO VendingMachine(Products, Price) VALUES('Wine Gums', '0.65')";
+            writeString.set(index_i, "INSERT INTO VendingMachine(Products, Price) VALUES('Wine Gums', '0.65')");
+            index_i++;
 //adds the text string the the selected items text field
             addToSelection = selectedItems.getText() + "Wine Gums\n";
             selectedItems.setText(addToSelection);
@@ -1296,7 +1320,7 @@ public class VendingMachine extends JFrame implements ActionListener
             twopStockNum += 1;
             twopStock.setText(numFormat.format(twopStockNum));
         }
-        //myStatement.executeUpdate(writeString);
 
     }
 }
+
