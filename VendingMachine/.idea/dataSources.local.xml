@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - vendingmachine@jycom.asuscomm.com" uuid="fbd52610-06e5-43e3-9bde-3d5ddce96ffc">
+      <secret-storage>master_key</secret-storage>
+      <user-name>vending</user-name>
+      <schema-pattern>vendingmachine.*</schema-pattern>
+      <default-schemas>vendingmachine.*</default-schemas>
+    </data-source>
+  </component>
+</project>

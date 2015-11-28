@@ -1,3 +1,5 @@
+import java.io.IOException;
+import java.net.URL;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
@@ -5,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import static javax.swing.JOptionPane.*;
 import java.awt.*;
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -151,12 +154,22 @@ public class VendingMachine extends JFrame implements ActionListener
         //제품별 버튼 생성 및 재고 세팅
         for(int i = 0 ; i < Pstock.length ; i++){
 
+            Image image = null;
+            try {
+                URL url = new URL("http://localhost:808/PHP/PJ/vendingmachine/main/img/p"+(i+1)+".jpg");
+                image = ImageIO.read(url);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            productImg[i] = new ImageIcon(image);
+            productImg[i] = new ImageIcon("");
+            System.out.println(Pstock[i][2]);
             productImg[i] = new ImageIcon(path+"images\\p"+(i+1)+".jpg");
             product[i] = new JButton("", productImg[i]);
             productName[i] = new JLabel(String.valueOf(Pstock[i][0]), JLabel.CENTER);
             productPrice[i] = new JLabel(String.valueOf(Pstock[i][1])+"원", JLabel.CENTER);
             productStock[i] = new JTextField(String.valueOf(Pstock[i][2]),2);
-
+            productStock[i].setEditable(false);
             nameP.add(i, String.valueOf(Pstock[i][0]));
             stockP.add(i, (Integer) Pstock[i][2]);
             priceP.add(i, (Integer) Pstock[i][1]);
@@ -177,6 +190,8 @@ public class VendingMachine extends JFrame implements ActionListener
             changeImg[i] = new ImageIcon(path+"images\\b"+(i+1)+".jpg");
             change[i] = new JButton("", billImg[i]);
             changeStock[i] = new JTextField("",2);
+            billStock[i].setEditable(false);
+            changeStock[i].setEditable(false);
         }
         stockBTemp = (ArrayList<Integer>) stockB.clone();
 
@@ -619,6 +634,7 @@ public class VendingMachine extends JFrame implements ActionListener
                 }
                 enterCoins.setEnabled(false);
                 returnCoins.setEnabled(false);
+                initChange.setEnabled(true);
 
                 //메시지 출력
                 outputMessage.setText(wonFormat.format(productTotal) + " 원만큼 사셨네요 감사합니다!\n거스름돈은 총 " + wonFormat.format(errorGiveChange) + "입니다!\n 거스름돈 반환 버튼을 눌러주세요.");
@@ -716,6 +732,8 @@ public class VendingMachine extends JFrame implements ActionListener
 
 
                 CFfinished.setEnabled(false);
+                initChange.setEnabled(false);
+
             }
         }
 
@@ -725,7 +743,6 @@ public class VendingMachine extends JFrame implements ActionListener
 
             //거스름돈 닫기 프레임 함수 호출
             closeChangeFrame();
-
 
             //상품과 입금 및 각종 버튼 재 활성화, 상품 및 거스름돈 재고 재 설정
             for(int i = 0 ; i < nameP.size() ; i++){
@@ -742,6 +759,7 @@ public class VendingMachine extends JFrame implements ActionListener
             enterCoins.setEnabled(true);
             returnCoins.setEnabled(true);
             CFfinished.setEnabled(true);
+
 
             outputMessage.setText("");
             outputMessage.setBackground(Color.white);

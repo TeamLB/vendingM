@@ -21,7 +21,7 @@ class VendingMachineDBHandler
         //DB연결 후 각 항목별 갯수를 전역 변수에 대입
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection order = DriverManager.getConnection("jdbc:mysql://jycom.asuscomm.com:3306/VendingMachine", "root","DB!");
+            Connection order = DriverManager.getConnection("jdbc:mysql://jycom.asuscomm.com:3306/VendingMachine", "vending","vending");
             myStatement = order.createStatement();
             String writeString = "select count(*) from pstock";
             rs = myStatement.executeQuery(writeString);
@@ -52,8 +52,8 @@ class VendingMachineDBHandler
 
 
         //상품, 권액 별 재고 배열
-        Object[][] Pstock = new Object[Pcount][3];
-        Object[][] Bstock = new Object[Bcount][3];
+        Object[][] Pstock = new Object[Pcount][4];
+        Object[][] Bstock = new Object[Bcount][4];
 
 
         //재고값을 리턴 해줄 ArrayList
@@ -70,8 +70,9 @@ class VendingMachineDBHandler
             while(rs.next()){
                 //리턴 받은 상품의 이름과 가격, 재고를 배열에 저장
                 Pstock[cnt][0] = rs.getString(1);
-                Pstock[cnt][1] = Integer.parseInt(String.valueOf(rs.getInt(2)));
-                Pstock[cnt][2] = Integer.parseInt(String.valueOf(rs.getInt(3)));
+                Pstock[cnt][1] = Integer.parseInt(String.valueOf(rs.getInt(3)));
+                Pstock[cnt][2] = Integer.parseInt(String.valueOf(rs.getInt(4)));
+                Pstock[cnt][3] = Integer.parseInt(String.valueOf(rs.getInt(2)));
                 cnt++;
             }
         }
@@ -91,7 +92,8 @@ class VendingMachineDBHandler
             while(rs.next()){
                 //리턴 받은 권액별 이름과 수량 배열에 저장
                 Bstock[cnt][0] = rs.getString(1);
-                Bstock[cnt][1] = Integer.parseInt(String.valueOf(rs.getInt(2)));
+                Bstock[cnt][1] = Integer.parseInt(String.valueOf(rs.getInt(3)));
+                Bstock[cnt][2] = Integer.parseInt(String.valueOf(rs.getInt(2)));
                 cnt++;
             }
         }
