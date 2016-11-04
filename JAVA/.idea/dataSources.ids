@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - vendingmachine@jycom.asuscomm.com" uuid="fbd52610-06e5-43e3-9bde-3d5ddce96ffc">
+    <database-info product="MySQL" version="5.5.5-10.0.17-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="vendingmachine"/>
+    <table name="bstock" schema="" catalog="vendingmachine" type="TABLE">
+      <column name="Bname" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Bstock" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="pstock" schema="" catalog="vendingmachine" type="TABLE">
+      <column name="Pname" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Pimage" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="Pprice" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Pstock" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="salesgraph" schema="" catalog="vendingmachine" type="TABLE">
+      <column name="product" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="sold" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="salesvolume" schema="" catalog="vendingmachine" type="TABLE">
+      <column name="product" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="sold" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+    </table>
+  </data-source>
+</component>

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="vending:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/vending_jar</output-path>
+    <root id="archive" name="vending.jar">
+      <element id="module-output" name="vending" />
+      <element id="library" level="project" name="src" />
+    </root>
+  </artifact>
+</component>
